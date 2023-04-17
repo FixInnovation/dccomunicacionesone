@@ -1,0 +1,1387 @@
+@charset "UTF-8";
+
+.navigation {
+    height: 70px;
+    background: #ffffff;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+/* Quitamos el relleno y el margen del documento */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    background-color: #ffffff;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+}
+
+
+/* Codificamos nuestra barra de navegación */
+.brand {
+    position: absolute;
+    padding-left: 20px;
+    float: left;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+.brand a,
+.brand a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Configuramos el tamaño de la imagen dentro de la Barra */
+.brand a img {
+    height: 55px;
+    margin-top: 5px;
+    aspect-ratio: 3/2;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Aplicamos otro color de background a un elemento en especifico */
+nav ul li .dc:hover,
+nav ul li .dc:visited:hover {
+    background: #ffc400;
+    color: #fff;
+}
+
+/* Aplicamos otro color de background a un elemento en especifico */
+nav ul li .priv:hover,
+nav ul li .priv:visited:hover {
+    background: #777777;
+    color: #eeeeee;
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: " ▾";
+}
+
+nav ul li ul li {
+    min-width: 220px;
+}
+
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Navgeación móvil */
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ffffff;
+    height: 70px;
+    width: 70px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .nav-mobile {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        padding: 70px 0 15px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+    }
+
+    nav ul li ul li a {
+        padding-left: 30px;
+    }
+
+    .nav-dropdown {
+        position: static;
+    }
+
+    .brand a img {
+        height: 45px;
+        margin-top: 12px;
+    }
+}
+
+
+@media screen and (min-width: 901px) {
+
+    .nav-list {
+        display: block !important;
+    }
+}
+
+
+#nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #000000;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .banner {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #ffffff;
+        position: relative;
+    }
+
+    #hero {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-image: linear-gradient(0deg,
+                rgba(15, 15, 15, 0.7),
+                rgba(0, 0, 0, 0.7)), url("../img/back-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+    }
+
+    .titulo-banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text-in {
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ffd901;
+    }
+
+    .text-out {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .security-text {
+        font-size: 17px;
+        margin-top: 40px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    /* Estilos para sección de oficina */
+    .oficinas {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: #0e0e0e;
+    }
+
+    .oficinas .logo-oficina {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .logo-oficina img {
+        height: 50px;
+    }
+
+    .controller-info {
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+        box-sizing: border-box;
+        gap: 30px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* Estilamos oficinas centrales */
+    .controller-info .oficinas-centrales {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .oficinas-centrales .title-oficina {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    .oficinas-centrales .oficinas-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        max-width: 350px;
+        color: #ffffff;
+    }
+
+    /* Estilamos direccion fiscal */
+    .controller-info .direccion-fiscal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .direccion-fiscal .title-direccion {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .direccion-fiscal .direccion-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 600;
+        max-width: 360px;
+    }
+
+    /* Apartado de redes sociales */
+    .redes-sociales {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .redes-sociales .container-redes {
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .container-redes .title-redes {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .middle {
+        display: flex;
+        flex-wrap: wrap;
+        width: 270px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #e4e4e4;
+        margin: 10px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #000000;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .btn i {
+        line-height: 43px;
+        font-size: 18px;
+        transition: 0.2s linear;
+    }
+
+    .btn:hover i {
+        transform: scale(1);
+        color: #f1f1f1;
+    }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #3b5998;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #49a1fa;
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(4)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #000;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(5)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #1c5bd1;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    /*.btn:nth-child(6)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+ */
+    .btn:nth-child(5)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #25D366;
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:hover::before {
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+    }
+
+    @keyframes aaa {
+        0% {
+            left: -110%;
+            top: 90%;
+        }
+
+        50% {
+            left: 10%;
+            top: -30%;
+        }
+
+        100% {
+            top: -10%;
+            left: -10%;
+        }
+    }
+
+    /* Estilos para menú */
+    .menu {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu-title {
+        display: flex;
+        width: 100%;
+    }
+
+    .menu-title .title-me {
+        margin-left: 20px;
+        color: #fff;
+    }
+
+
+    .menu-items {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .menu-link {
+        line-height: 40px;
+        text-decoration: none;
+        color: #ffffff;
+        margin-left: 20px;
+    }
+
+    .menu-link:hover {
+        color: #fffb1c;
+    }
+
+    .chev-right {
+        margin-right: 10px;
+        color: #fffb1c;
+        font-size: 12px;
+    }
+
+
+    /* Estilos para el footer*/
+    .footer-ext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #000000;
+        height: 40px;
+    }
+
+    .footer-ext .copyright {
+        width: 100%;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: end;
+        margin-right: 20px;
+    }
+
+    .footer-ext .footer-info {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .banner {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #ffffff;
+        position: relative;
+    }
+
+    #hero {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-image: linear-gradient(0deg,
+                rgba(15, 15, 15, 0.7),
+                rgba(0, 0, 0, 0.7)), url("../img/back-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+    }
+
+    .titulo-banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text-in {
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ffd901;
+    }
+
+    .text-out {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .security-text {
+        font-size: 17px;
+        margin-top: 40px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    /* Estilos para sección de oficina */
+    .oficinas {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: #0e0e0e;
+    }
+
+    .oficinas .logo-oficina {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .logo-oficina img {
+        height: 50px;
+    }
+
+    .controller-info {
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+        box-sizing: border-box;
+        gap: 30px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* Estilamos oficinas centrales */
+    .controller-info .oficinas-centrales {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .oficinas-centrales .title-oficina {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    .oficinas-centrales .oficinas-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        max-width: 350px;
+        color: #ffffff;
+    }
+
+    /* Estilamos direccion fiscal */
+    .controller-info .direccion-fiscal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .direccion-fiscal .title-direccion {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .direccion-fiscal .direccion-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 600;
+        max-width: 360px;
+    }
+
+    /* Apartado de redes sociales */
+    .redes-sociales {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .redes-sociales .container-redes {
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .container-redes .title-redes {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .middle {
+        display: flex;
+        flex-wrap: wrap;
+        width: 270px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #e4e4e4;
+        margin: 10px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #000000;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .btn i {
+        line-height: 43px;
+        font-size: 18px;
+        transition: 0.2s linear;
+    }
+
+    .btn:hover i {
+        transform: scale(1);
+        color: #f1f1f1;
+    }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #3b5998;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #49a1fa;
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(4)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #000;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(5)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #1c5bd1;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    /*.btn:nth-child(6)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+ */
+    .btn:nth-child(5)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #25D366;
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:hover::before {
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+    }
+
+    @keyframes aaa {
+        0% {
+            left: -110%;
+            top: 90%;
+        }
+
+        50% {
+            left: 10%;
+            top: -30%;
+        }
+
+        100% {
+            top: -10%;
+            left: -10%;
+        }
+    }
+
+    /* Estilos para menú */
+    .menu {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu-title {
+        display: flex;
+        width: 100%;
+    }
+
+    .menu-title .title-me {
+        margin-left: 20px;
+        color: #fff;
+    }
+
+
+    .menu-items {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .menu-link {
+        line-height: 40px;
+        text-decoration: none;
+        color: #ffffff;
+        margin-left: 20px;
+    }
+
+    .menu-link:hover {
+        color: #fffb1c;
+    }
+
+    .chev-right {
+        margin-right: 10px;
+        color: #fffb1c;
+        font-size: 12px;
+    }
+
+
+    /* Estilos para el footer*/
+    .footer-ext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #000000;
+        height: 40px;
+    }
+
+    .footer-ext .copyright {
+        width: 100%;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: end;
+        margin-right: 20px;
+    }
+
+    .footer-ext .footer-info {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container-slider {
+        width: 100%;
+        max-width: 100%;
+        height: 70vh;
+        min-height: 460px;
+        max-height: 700px;
+        overflow: hidden;
+        box-shadow: 0 0 0 5px #ffffff;
+        position: relative;
+        border-radius: 0px;
+        margin-top: 00px;
+    }
+
+    .slider__one {
+        display: flex;
+        width: 600%;
+        height: 100%;
+        margin-left: -100%;
+    }
+
+    .slider__section {
+        position: relative;
+        width: 100%;
+    }
+
+    .capa-color {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.507);
+        /* Color de fondo deseado con transparencia */
+        z-index: 1;
+        /* Asegura que la capa de color esté por encima de la imagen */
+    }
+
+    .slider__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 3/3;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .progress-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 5px;
+        /* Ajusta la altura de la línea de progreso según tus necesidades */
+        background-color: #ffbb00;
+        animation: progress 8s linear infinite;
+        /* Ajusta el color de la línea de progreso según tus necesidades */
+        z-index: 2;
+    }
+
+    @keyframes progress {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    /* Estilos para container camaras */
+    .container-camaras {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 900px;
+        background: #ffffff;
+    }
+
+    /* Soluciones dccomunicaciones */
+    .global-soluciones {
+        width: 100%;
+    }
+
+    .linea-title {
+        font-size: 22px;
+        margin-top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+    }
+
+    .linea-title:before {
+        border-top: 5px solid #ff9900;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .linea-title span {
+        background: #ffffff;
+        padding: 0 15px;
+    }
+
+    /* Estilos de carda */
+    .camaras-solutions {
+        display: flex;
+        width: 100%;
+        max-width: 1400px;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 30px 50px;
+        flex-wrap: wrap;
+    }
+
+    .card-container {
+        position: relative;
+        min-width: 285px;
+        height: 320px;
+    }
+
+    .card {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        transform-origin: center;
+        z-index: 1;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .card-main img {
+        height: 180px;
+    }
+
+    .card-before:before,
+    .card-after:after {
+        content: "";
+        position: absolute;
+        border-radius: 2px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ebebeb;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:before {
+        transform: rotate(-2deg);
+    }
+
+    .card:after {
+        transform: rotate(2deg);
+    }
+
+    .card-container:hover .card:before {
+        transform: rotate(-4deg);
+    }
+
+    .card-container:hover .card:after {
+        transform: rotate(4deg);
+    }
+
+    /* Estilos para sección de oficina */
+    .oficinas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 250px;
+        background: #0e0e0e;
+    }
+
+    .oficinas .logo-oficina {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .logo-oficina img {
+        margin-left: 40px;
+        height: 65px;
+    }
+
+    .controller-info {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+        box-sizing: border-box;
+        gap: 30px;
+    }
+
+    /* Estilamos oficinas centrales */
+    .controller-info .oficinas-centrales {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 50px;
+    }
+
+    .oficinas-centrales .title-oficina {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #ffef0a;
+        margin-bottom: 5px;
+    }
+
+    .oficinas-centrales .oficinas-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 600;
+        max-width: 350px;
+        color: #fff;
+    }
+
+    /* Estilamos direccion fiscal */
+    .controller-info .direccion-fiscal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .direccion-fiscal .title-direccion {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .direccion-fiscal .direccion-text {
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 600;
+        max-width: 360px;
+    }
+
+    /* Apartado de redes sociales */
+    .redes-sociales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .redes-sociales .container-redes {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .container-redes .title-redes {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #ffef0a;
+    }
+
+    .middle {
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateY(-50%);
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #f1f1f1;
+        margin: 10px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #000000;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .btn i {
+        line-height: 43px;
+        font-size: 18px;
+        transition: 0.2s linear;
+    }
+
+    .btn:hover i {
+        transform: scale(1);
+        color: #f1f1f1;
+    }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #3b5998;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #49a1fa;
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(4)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #000;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(5)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #25D366;
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:hover::before {
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+    }
+
+    @keyframes aaa {
+        0% {
+            left: -110%;
+            top: 90%;
+        }
+
+        50% {
+            left: 10%;
+            top: -30%;
+        }
+
+        100% {
+            top: -10%;
+            left: -10%;
+        }
+    }
+
+    /* Estilos para menú */
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+    }
+
+    .menu-title .title-me {
+        font-size: 17px;
+        color: #ffef0a;
+        text-transform: uppercase;
+    }
+
+    .menu-items {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        align-content: center;
+    }
+
+    .menu-link {
+        line-height: 40px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .menu-link:hover {
+        color: #fffb1c;
+    }
+
+    .chev-right {
+        margin-right: 10px;
+        color: #fffb1c;
+        font-size: 12px;
+    }
+
+    /* Estilos para el footer*/
+    .footer-ext {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: #000000;
+        height: 50px;
+    }
+
+    .footer-ext .copyright {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .footer-ext .footer-info {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+}

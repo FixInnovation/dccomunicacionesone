@@ -1,0 +1,2188 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .banner {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #ffffff;
+        position: relative;
+    }
+
+    #hero {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-image: linear-gradient(0deg,
+                rgba(15, 15, 15, 0.7),
+                rgba(0, 0, 0, 0.7)), url("../img/back-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+    }
+
+    .titulo-banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text-in {
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ffd901;
+    }
+
+    .text-out {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .security-text {
+        font-size: 17px;
+        margin-top: 40px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    /* Soluciones dccomunicaciones */
+    .global-soluciones {
+        width: 100%;
+        height: 100%;
+    }
+
+    .linea-title{
+        font-size: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        margin-top: 20px;
+    }
+
+    .linea-title:before {
+        border-top: 3px solid #ff9900;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .linea-title span{
+        background: #ffffff;
+        padding: 0 15px;
+    }
+
+    /* Apartado solutions */
+    .solutions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        background: #ffffff;
+    }
+
+    /* Estilos para dc-solutions */
+    .dc-solutions {
+        width: 200px;
+        height: 300px;
+        background: #0f0f0f;
+        box-shadow: 6px 3px 1px #242424c5;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .dc-solutions img {
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 35px;
+        border: 4px solid #eea12e;
+        height: 120px;
+    }
+
+    .dc-solutions .title-solution {
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 10px;
+        color: #fff;
+    }
+
+    .dc-solutions .text-solution {
+        font-size: 10px;
+        text-align: justify;
+        padding: 0px 10px;
+        margin-top: 10px;
+        height: 110px;
+        color: #fff;
+    }
+
+    /* Estilos para slider */
+    .global-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 370px;
+        background: #1a1a1a;
+    }
+
+    .texto-informationone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .text-infone {
+        max-width: 750px;
+    }
+
+    .text-infone {
+        color: #fdfdfd;
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .text-colorone {
+        color: #ffcb22;
+    }
+
+    .container-slider {
+        width: 90%;
+        max-width: 400px;
+        overflow: hidden;
+        box-shadow: 0 0 0 5px #ffffff;
+        position: relative;
+        height: 250px;
+        border-radius: 10px;
+        background: #000;
+        margin-top: 30px;
+    }
+
+    .slider__one {
+        display: flex;
+        width: 600%;
+        height: 300px;
+        margin-left: -100%;
+    }
+
+    .slider__section {
+        width: 100%;
+    }
+
+    .slider__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 3/2;
+        border-radius: 10px;
+    }
+
+    .slider__btn {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.7);
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 40px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+    .slider__btn .fa-chevron-right{
+        font-size: 20px;
+    }
+
+    .slider__btn .fa-chevron-left{
+        font-size: 20px;
+    }
+
+    .slider__btn:hover {
+        background: #fff;
+    }
+
+    .slider__btn--left {
+        left: 10px;
+    }
+
+    .slider__btn--right {
+        right: 10px;
+    }
+
+
+    /* Soluciones dccomunicaciones */
+    .global-soluciones-one {
+        width: 100%;
+        height: 100%;
+    }
+
+    .linea-title-one{
+        font-size: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        margin-top: 20px;
+    }
+
+    .linea-title-one:before {
+        border-top: 3px solid #ff9900;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .linea-title-one span{
+        background: #ffffff;
+        padding: 0 15px;
+    }
+
+    /* Apartado solutions */
+    .solutions-one {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        background: #ffffff;
+    }
+
+    /* Estilos para dc-solutions */
+    .dc-solutions-one {
+        width: 200px;
+        height: 300px;
+        background: #0f0f0f;
+        box-shadow: 6px 3px 1px #242424c5;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .dc-solutions-one img {
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 35px;
+        border: 4px solid #eea12e;
+        height: 120px;
+    }
+
+    .dc-solutions-one .title-solution-one {
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 10px;
+        color: #fff;
+    }
+
+    .dc-solutions-one .text-solution-one {
+        font-size: 10px;
+        text-align: justify;
+        padding: 0px 10px;
+        margin-top: 10px;
+        height: 80px;
+        color: #fff;
+    }
+
+    .dc-solutions-one .button-link-one {
+        display: flex;
+        justify-content: center;
+        height: 23px;
+    }
+
+    .button-link-one .nav-link-one {
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .nav-link-one:hover{
+        color: #fffb1c;
+        transition: all .1s;
+    }
+
+
+    .nav-link-one:hover::before {
+        width: 100%;
+        color: #eea12e;
+    }
+
+    /* Estilos para slider infinte */
+    /* Soluciones dccomunicaciones */
+    .global-soluciones-two {
+        width: 100%;
+        height: 100%;
+    }
+
+    .linea-title-two{
+        font-size: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 20px;
+        padding: 0px 10px;
+    }
+    
+    .slider-company{
+        width: 80vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    
+
+    .slider-company .slide-track{
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(200px * 16);
+    }
+    
+    .slider-company .slide{
+        width: 100px;
+        padding: 5px;
+    }
+    
+    
+    .slider-company .slide img{
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+    }
+    
+    @keyframes scroll{
+        0%{
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100%{
+            -webkit-transform: translateX(calc(-200px * 8));
+            transform: translateX(calc(-200px * 8));
+        }
+    }
+
+    /* Estilos para sección de oficina */
+    .oficinas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: #0e0e0e;
+    }
+
+    .oficinas .logo-oficina{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .logo-oficina img{  
+        height: 50px;
+    }
+
+    .controller-info{
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+        box-sizing: border-box;
+        gap: 30px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* Estilamos oficinas centrales */
+    .controller-info .oficinas-centrales{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .oficinas-centrales .title-oficina{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    .oficinas-centrales .oficinas-text{
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        max-width: 350px;
+        color: #ffffff;
+    }
+
+    /* Estilamos direccion fiscal */
+    .controller-info .direccion-fiscal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .direccion-fiscal .title-direccion{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .direccion-fiscal .direccion-text{
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 600;
+        max-width: 360px;
+    }
+
+    /* Apartado de redes sociales */
+    .redes-sociales{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .redes-sociales .container-redes{
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .container-redes .title-redes{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .middle {
+        display: flex;
+        flex-wrap: wrap;
+        width: 270px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #e4e4e4;
+        margin: 10px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #000000;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .btn i {
+        line-height: 43px;
+        font-size: 18px;
+        transition: 0.2s linear;
+    }
+
+    .btn:hover i {
+        transform: scale(1);
+        color: #f1f1f1;
+    }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #3b5998;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #49a1fa;
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(4)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #000;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(5)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #1c5bd1;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    /*.btn:nth-child(6)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+ */
+    .btn:nth-child(5)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #25D366;
+        left: -110%;
+        top: 90%;
+    }
+    .btn:hover::before {
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+    }
+
+    @keyframes aaa {
+        0% {
+            left: -110%;
+            top: 90%;
+        }
+        50% {
+            left: 10%;
+            top: -30%;
+        }
+        100% {
+            top: -10%;
+            left: -10%;
+        }
+    }
+
+    /* Estilos para menú */
+    .menu{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu-title{
+        display: flex;
+        width: 100%;
+    }
+
+    .menu-title .title-me{
+        margin-left: 20px;
+        color: #fff;
+    }
+
+
+    .menu-items{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .menu-link{
+        line-height: 40px;
+        text-decoration: none;
+        color: #ffffff;
+        margin-left: 20px;
+    }
+
+    .menu-link:hover{
+        color: #fffb1c;
+    }
+
+    .chev-right{
+        margin-right: 10px;
+        color: #fffb1c;
+        font-size: 12px;
+    }
+
+
+    /* Estilos para el footer*/
+    .footer-ext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #000000;
+        height: 40px;
+    }
+
+    .footer-ext .copyright {
+        width: 100%;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: end;
+        margin-right: 20px;
+    }
+
+    .footer-ext .footer-info{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .banner {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #ffffff;
+        position: relative;
+    }
+
+    #hero {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-image: linear-gradient(0deg,
+                rgba(15, 15, 15, 0.7),
+                rgba(0, 0, 0, 0.7)), url("../img/back-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+    }
+
+    .titulo-banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text-in {
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ffd901;
+    }
+
+    .text-out {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .security-text {
+        font-size: 17px;
+        margin-top: 40px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    /* Soluciones dccomunicaciones */
+    .global-soluciones {
+        width: 100%;
+        height: 100%;
+    }
+
+    .linea-title{
+        font-size: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        margin-top: 20px;
+    }
+
+    .linea-title:before {
+        border-top: 3px solid #ff9900;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .linea-title span{
+        background: #ffffff;
+        padding: 0 15px;
+    }
+
+    /* Apartado solutions */
+    .solutions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 25px 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        background: #ffffff;
+    }
+
+    /* Estilos para dc-solutions */
+    .dc-solutions {
+        width: 220px;
+        height: 320px;
+        background: #0f0f0f;
+        box-shadow: 6px 3px 1px #242424c5;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .dc-solutions img {
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 35px;
+        border: 4px solid #eea12e;
+        height: 130px;
+    }
+
+    .dc-solutions .title-solution {
+        font-size: 13px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 10px;
+        color: #fff;
+    }
+
+    .dc-solutions .text-solution {
+        font-size: 12px;
+        text-align: justify;
+        padding: 0px 10px;
+        margin-top: 10px;
+        height: 110px;
+        color: #fff;
+    }
+
+    /* Estilos para slider */
+    .global-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 370px;
+        background: #1a1a1a;
+    }
+
+    .texto-informationone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .text-infone {
+        max-width: 750px;
+    }
+
+    .text-infone {
+        color: #fdfdfd;
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .text-colorone {
+        color: #ffcb22;
+    }
+
+    .container-slider {
+        width: 90%;
+        max-width: 400px;
+        overflow: hidden;
+        box-shadow: 0 0 0 5px #ffffff;
+        position: relative;
+        height: 250px;
+        border-radius: 10px;
+        background: #000;
+        margin-top: 30px;
+    }
+
+    .slider__one {
+        display: flex;
+        width: 600%;
+        height: 300px;
+        margin-left: -100%;
+    }
+
+    .slider__section {
+        width: 100%;
+    }
+
+    .slider__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 3/2;
+        border-radius: 10px;
+    }
+
+    .slider__btn {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.7);
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 40px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+    .slider__btn .fa-chevron-right{
+        font-size: 20px;
+    }
+
+    .slider__btn .fa-chevron-left{
+        font-size: 20px;
+    }
+
+
+    .slider__btn:hover {
+        background: #fff;
+    }
+
+    .slider__btn--left {
+        left: 10px;
+    }
+
+    .slider__btn--right {
+        right: 10px;
+    }
+
+
+    /* Soluciones dccomunicaciones */
+    .global-soluciones-one {
+        width: 100%;
+        height: 100%;
+    }
+
+    .linea-title-one{
+        font-size: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        margin-top: 20px;
+    }
+
+    .linea-title-one:before {
+        border-top: 3px solid #ff9900;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .linea-title-one span{
+        background: #ffffff;
+        padding: 0 15px;
+    }
+
+    /* Apartado solutions */
+    .solutions-one {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 25px 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        background: #ffffff;
+    }
+
+    /* Estilos para dc-solutions */
+    .dc-solutions-one {
+        width: 220px;
+        height: 320px;
+        background: #0f0f0f;
+        box-shadow: 6px 3px 1px #242424c5;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .dc-solutions-one img {
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 35px;
+        border: 4px solid #eea12e;
+        height: 130px;
+    }
+
+    .dc-solutions-one .title-solution-one {
+        font-size: 13px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 10px;
+        color: #fff;
+    }
+
+    .dc-solutions-one .text-solution-one {
+        font-size: 12px;
+        text-align: justify;
+        padding: 0px 10px;
+        margin-top: 10px;
+        height: 90px;
+        color: #fff;
+    }
+
+    .dc-solutions-one .button-link-one {
+        display: flex;
+        justify-content: center;
+        height: 23px;
+    }
+
+    .button-link-one .nav-link-one {
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .nav-link-one:hover{
+        color: #fffb1c;
+        transition: all .1s;
+    }
+
+
+    .nav-link-one:hover::before {
+        width: 100%;
+        color: #eea12e;
+    }
+
+    /* Estilos para slider infinte */
+    /* Soluciones dccomunicaciones */
+    .global-soluciones-two {
+        width: 100%;
+        height: 100%;
+    }
+
+    .linea-title-two{
+        font-size: 19px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        margin-top: 20px;
+    }
+
+    .linea-title-two:before {
+        border-top: 3px solid #ff9900;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .linea-title-two span{
+        background: #ffffff;
+        padding: 0px 15px;
+    }
+
+    
+    .slider-company{
+        width: 80vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    
+
+    .slider-company .slide-track{
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(200px * 16);
+    }
+    
+    .slider-company .slide{
+        width: 150px;
+        padding: 5px;
+    }
+    
+    
+    .slider-company .slide img{
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+    }
+    
+    @keyframes scroll{
+        0%{
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100%{
+            -webkit-transform: translateX(calc(-200px * 8));
+            transform: translateX(calc(-200px * 8));
+        }
+    }
+
+    /* Estilos para sección de oficina */
+    .oficinas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: #0e0e0e;
+    }
+
+    .oficinas .logo-oficina{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .logo-oficina img{  
+        height: 50px;
+    }
+
+    .controller-info{
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+        box-sizing: border-box;
+        gap: 30px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* Estilamos oficinas centrales */
+    .controller-info .oficinas-centrales{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .oficinas-centrales .title-oficina{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    .oficinas-centrales .oficinas-text{
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        max-width: 350px;
+        color: #ffffff;
+    }
+
+    /* Estilamos direccion fiscal */
+    .controller-info .direccion-fiscal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .direccion-fiscal .title-direccion{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .direccion-fiscal .direccion-text{
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 600;
+        max-width: 360px;
+    }
+
+    /* Apartado de redes sociales */
+    .redes-sociales{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .redes-sociales .container-redes{
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .container-redes .title-redes{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .middle {
+        display: flex;
+        flex-wrap: wrap;
+        width: 270px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #e4e4e4;
+        margin: 10px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #000000;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .btn i {
+        line-height: 43px;
+        font-size: 18px;
+        transition: 0.2s linear;
+    }
+
+    .btn:hover i {
+        transform: scale(1);
+        color: #f1f1f1;
+    }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #3b5998;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #49a1fa;
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(4)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #000;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(5)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #1c5bd1;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    /*.btn:nth-child(6)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+ */
+    .btn:nth-child(5)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #25D366;
+        left: -110%;
+        top: 90%;
+    }
+    .btn:hover::before {
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+    }
+
+    @keyframes aaa {
+        0% {
+            left: -110%;
+            top: 90%;
+        }
+        50% {
+            left: 10%;
+            top: -30%;
+        }
+        100% {
+            top: -10%;
+            left: -10%;
+        }
+    }
+
+    /* Estilos para menú */
+    .menu{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu-title{
+        display: flex;
+        width: 100%;
+    }
+
+    .menu-title .title-me{
+        margin-left: 20px;
+        color: #fff;
+    }
+
+
+    .menu-items{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .menu-link{
+        line-height: 40px;
+        text-decoration: none;
+        color: #ffffff;
+        margin-left: 20px;
+    }
+
+    .menu-link:hover{
+        color: #fffb1c;
+    }
+
+    .chev-right{
+        margin-right: 10px;
+        color: #fffb1c;
+        font-size: 12px;
+    }
+
+
+    /* Estilos para el footer*/
+    .footer-ext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #000000;
+        height: 40px;
+    }
+
+    .footer-ext .copyright {
+        width: 100%;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: end;
+        margin-right: 20px;
+    }
+
+    .footer-ext .footer-info {
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+        background-color: #ffffff;
+        position: relative;
+    }
+
+    #hero {
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        background-image: linear-gradient(0deg,
+                rgba(15, 15, 15, 0.7),
+                rgba(0, 0, 0, 0.7)), url("../img/backgrounds/background-serv.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .titulo-banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text-in {
+        text-align: center;
+        font-size: 35px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .text-out {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    .security-text {
+        font-size: 22px;
+        margin-top: 40px;
+        color: #ffffff;
+    }
+
+    /* Soluciones dccomunicaciones */
+    .global-soluciones {
+        width: 100%;
+        height: 100%;
+    }
+
+    .linea-title {
+        font-size: 22px;
+        margin-top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+    }
+
+    .linea-title:before {
+        border-top: 5px solid #ff9900;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .linea-title span{
+        background: #ffffff;
+        padding: 0 15px;
+    }
+
+    /* Apartado solutions */
+    .solutions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        gap: 20px;
+        margin-top: 20px;
+        padding: 0 20px;
+        background: #ffffff;
+    }
+
+    .dc-solutions {
+        width: 300px;
+        height: 400px;
+        background: #ffffff;
+        padding: 10px;
+    }
+
+    .dc-solutions img {
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 50%;
+        border: 10px solid #eea12e;
+        height: 170px;
+    }
+
+    .dc-solutions .title-solution {
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .dc-solutions .text-solution {
+        font-size: 14px;
+        text-align: justify;
+        padding: 0px 10px;
+        margin-top: 10px;
+        height: 110px;
+        background: #ffffff;
+        color: #080808;
+    }
+
+    .dc-solutions .button-link {
+        display: flex;
+        justify-content: center;
+        height: 23px;
+    }
+
+    .button-link .nav-link {
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .nav-link:hover{
+        color: #ee7f2e;
+        transition: all .5s;
+    }
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: #ee7f2e;
+        transition: width .5s;
+    }
+
+    .nav-link:hover::before {
+        width: 100%;
+        color: #eea12e;
+    }
+
+    /* ******************** */
+    /* Soluciones dccomunicaciones */
+    .global-soluciones-one {
+        width: 100%;
+        height: 100%;
+    }
+
+    .linea-title-one {
+        font-size: 22px;
+        margin-top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .linea-title-one {
+        position: relative;
+        z-index: 1;
+    }
+
+    .linea-title-one:before {
+        border-top: 5px solid #ff9900;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .linea-title-one span{
+        background: #ffffff;
+        padding: 0 15px;
+    }
+
+    /* Apartado solutions */
+    .solutions-one {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 20px 70px;
+        margin-top: 20px;
+        padding: 0 20px;
+        background: #ffffff;
+    }
+
+    .dc-solutions-one {
+        width: 250px;
+        height: 370px;
+        background: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .dc-solutions-one img {
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 50%;
+        border: 10px solid #eea12e;
+        height: 170px;
+    }
+
+    .dc-solutions-one .title-solution-one {
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .dc-solutions-one .text-solution-one {
+        font-size: 14px;
+        text-align: justify;
+        padding: 0px 10px;
+        margin-top: 10px;
+        height: 95px;
+        background: #ffffff;
+        color: #080808;
+    }
+
+    .dc-solutions-one .button-link-one {
+        display: flex;
+        justify-content: center;
+        height: 31px;
+    }
+
+    .button-link-one .nav-link-one {
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .nav-link-one:hover{
+        color: #ee7f2e;
+        transition: all .5s;
+    }
+
+    .nav-link-one::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: #ee7f2e;
+        transition: width .5s;
+    }
+
+    .nav-link-one:hover::before {
+        width: 100%;
+        color: #eea12e;
+    }
+
+
+    /* Estilos para slider */
+    .global-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        background: #1a1a1a;
+    }
+
+    /* Comenzamos a estilar las secciones */
+    .container_fixione {
+        width: 100%;
+    }
+
+    .button-spanone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .button-backone {
+        display: flex;
+        box-sizing: border-box;
+        padding: 8px 40px;
+        background: #ffffff;
+        border-radius: 20px;
+        justify-content: center;
+    }
+
+    .text-buttonone {
+        font-size: 14px;
+        color: #419dc7;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .texto-informationone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+    .text-infone {
+        max-width: 750px;
+    }
+
+    .text-infone {
+        color: #fdfdfd;
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .text-colorone {
+        color: #ffcb22;
+    }
+
+    .container-slider {
+        width: 90%;
+        max-width: 600px;
+        overflow: hidden;
+        box-shadow: 0 0 0 5px #ffffff;
+        position: relative;
+        height: 380px;
+        border-radius: 10px;
+        background: #000;
+        margin-top: 30px;
+    }
+
+    .slider__one {
+        display: flex;
+        width: 600%;
+        height: 380px;
+        margin-left: -100%;
+    }
+
+    .slider__section {
+        width: 100%;
+    }
+
+    .slider__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 3/2;
+        border-radius: 10px;
+    }
+
+    .slider__btn {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.7);
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 40px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+    .slider__btn .fa-chevron-right{
+        font-size: 20px;
+    }
+
+    .slider__btn .fa-chevron-left{
+        font-size: 20px;
+    }
+
+
+    .slider__btn:hover {
+        background: #fff;
+    }
+
+    .slider__btn--left {
+        left: 10px;
+    }
+
+    .slider__btn--right {
+        right: 10px;
+    }
+
+      /* Estilos para slider infinte */
+    .global-soluciones-two {
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+    }
+
+    .linea-title-two {
+        font-size: 22px;
+        margin-top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .linea-title-two {
+        position: relative;
+        z-index: 1;
+    }
+
+    .linea-title-two:before {
+        border-top: 5px solid #ff9900;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .linea-title-two span{
+        background: #ffffff;
+        padding: 0 15px;
+    }
+    .slider-company{
+        width: 75vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    
+
+    .slider-company .slide-track{
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(200px * 16);
+    }
+    
+    .slider-company .slide{
+        width: 250px;
+        padding: 20px;
+    }
+    
+    
+    .slider-company .slide img{
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+    }
+    
+    @keyframes scroll{
+        0%{
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100%{
+            -webkit-transform: translateX(calc(-200px * 8));
+            transform: translateX(calc(-200px * 8));
+        }
+    }
+
+    /* Estilos para sección de oficina */
+    .oficinas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 250px;
+        background: #0e0e0e;
+    }
+
+    .oficinas .logo-oficina{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .logo-oficina img{
+        margin-left: 40px;
+        height: 65px;
+    }
+
+    .controller-info{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+        box-sizing: border-box;
+        gap: 30px;
+    }
+
+    /* Estilamos oficinas centrales */
+    .controller-info .oficinas-centrales{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 50px;
+    }
+
+    .oficinas-centrales .title-oficina{
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #ffef0a;
+        margin-bottom: 5px;
+    }
+
+    .oficinas-centrales .oficinas-text{
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 600;
+        max-width: 350px;
+        color: #fff;
+    }
+
+    /* Estilamos direccion fiscal */
+    .controller-info .direccion-fiscal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .direccion-fiscal .title-direccion{
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .direccion-fiscal .direccion-text{
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 600;
+        max-width: 360px;
+    }
+
+    /* Apartado de redes sociales */
+    .redes-sociales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .redes-sociales .container-redes{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .container-redes .title-redes{
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #ffef0a;
+    }
+
+    .middle {
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateY(-50%);
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #f1f1f1;
+        margin: 10px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #000000;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .btn i {
+        line-height: 43px;
+        font-size: 18px;
+        transition: 0.2s linear;
+    }
+
+    .btn:hover i {
+        transform: scale(1);
+        color: #f1f1f1;
+    }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #3b5998;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #49a1fa;
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(4)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #000;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .btn:nth-child(5)::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #25D366;
+        left: -110%;
+        top: 90%;
+    }
+    .btn:hover::before {
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+    }
+
+    @keyframes aaa {
+        0% {
+            left: -110%;
+            top: 90%;
+        }
+        50% {
+            left: 10%;
+            top: -30%;
+        }
+        100% {
+            top: -10%;
+            left: -10%;
+        }
+    }
+
+    /* Estilos para menú */
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+    }
+
+    .menu-title .title-me{
+        font-size: 17px;
+        color: #ffef0a;
+        text-transform: uppercase;
+    }
+
+    .menu-items{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        align-content: center;
+    }
+
+    .menu-link{
+        line-height: 40px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .menu-link:hover{
+        color: #fffb1c;
+    }
+
+    .chev-right{
+        margin-right: 10px;
+        color: #fffb1c;
+        font-size: 12px;
+    }
+
+    /* Estilos para el footer*/
+    .footer-ext {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: #000000;
+        height: 50px;
+    }
+
+    .footer-ext .copyright {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .footer-ext .footer-info {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+}
